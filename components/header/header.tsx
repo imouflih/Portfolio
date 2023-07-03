@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import NavMenu from "./nav-menu";
 
 const SiteHeader = () => {
   return (
@@ -15,7 +16,7 @@ const SiteHeader = () => {
             />
           </Link>
         </div>
-        <div>nav menu</div>
+        <NavMenu />
         <div className="flex justify-end flex-1 space-x-4">
           <div>social media</div>
           <div>dark mode</div>
