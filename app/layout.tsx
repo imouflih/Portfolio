@@ -1,3 +1,4 @@
+import SiteHeader from "@/components/header/header";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body>{children}</body>
+      <body>
+        <main className="relative flex flex-col min-h-screen">
+          <SiteHeader />
+          <div className="flex-1">{children}</div>
+        </main>
+      </body>
     </html>
   );
 }
