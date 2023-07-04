@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/header/header";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 export const metadata = {
   title: "Iliasse MOUFLIH",
@@ -14,10 +15,12 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <body>
-        <main className="relative flex flex-col min-h-screen">
-          <SiteHeader />
-          <div className="flex-1">{children}</div>
-        </main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main className="relative flex flex-col min-h-screen">
+            <SiteHeader />
+            <div className="flex-1">{children}</div>
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavMenu from "./nav-menu";
 import SocialMediaIcons from "./social-media-icons";
+import ThemeToggle from "../theme/theme-toggle";
 
 const SiteHeader = () => {
   return (
@@ -18,9 +19,9 @@ const SiteHeader = () => {
           </Link>
         </div>
         <NavMenu />
-        <div className="flex justify-end flex-1 space-x-4">
+        <div className="flex justify-end flex-1 space-x-8">
           <SocialMediaIcons />
-          <div>dark mode</div>
+          <ThemeToggle />
         </div>
       </div>
     </header>
