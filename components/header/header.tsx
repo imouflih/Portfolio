@@ -9,7 +9,7 @@ const SiteHeader = () => {
     <header className="sticky top-0 z-50 w-full border-b-2">
       <div className="flex items-center h-16 px-24 space-x-4">
         <div className="flex gap-6">
-          <Link href="/" className="relative flex items-center w-64 h-44">
+          <Link href="/" className="relative flex items-center w-44 h-44">
             <Image
               src={"/images/logo.png"}
               fill
