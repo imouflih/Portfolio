@@ -13,7 +13,7 @@ const SiteHeader = () => {
             <Image
               src={"/images/logo.png"}
               fill
-              className="block object-contain w-full h-full"
+              className="block w-full h-full"
               alt="Logo"
             />
           </Link>

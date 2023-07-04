@@ -1,10 +1,11 @@
 import SiteHeader from "@/components/header/header";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { siteConfig } from "@/config/site";
 
 export const metadata = {
-  title: "Iliasse MOUFLIH",
-  description: "My portfolio website",
+  title: siteConfig.title,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
