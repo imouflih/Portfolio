@@ -29,7 +29,7 @@ const sizeClassNames = {
 };
 
 const Button: React.FC<ButtonProps> = ({
-  variant,
+  variant = "Default",
   size = "default",
   children,
   className,
