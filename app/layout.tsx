@@ -1,5 +1,5 @@
 import SiteHeader from "@/components/header/header";
-import "./globals.css";
+import "@/style/globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { siteConfig } from "@/config/site";
 
