@@ -3,14 +3,13 @@ import Button from "../ui/button";
 
 const NavMenu = () => {
   const navLinks = [
-    { href: "/", label: "Accueil" },
-    { href: "/about-me", label: "À propos de moi" },
+    { href: "/", label: "À propos de moi" },
     { href: "/my-projects", label: "Mes projets" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <nav className="flex w-full dark:bg-gray-800 dark:border-gray-700">
+    <nav className="flex w-full">
       {navLinks.map((link) => (
         <Link
           key={link.href}
