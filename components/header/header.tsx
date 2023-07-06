@@ -6,7 +6,7 @@ import ThemeToggle from "../theme/theme-toggle";
 
 const SiteHeader = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b-2 dark:bg-gray-800 animate-fade-in">
+    <header className="sticky top-0 z-50 w-full border-b-2 bg-slate-200 dark:bg-gray-800 animate-fade-in">
       <div className="flex items-center h-16 px-24 space-x-4">
         <div className="flex gap-6">
           <Link href="/" className="relative flex items-center w-44 h-44">
