@@ -86,10 +86,6 @@
     }
   }
 
-  .animate-title {
-    animation: title 3s ease-out forwards;
-  }
-
   @keyframes oscillate {
     0%,
     100% {
@@ -100,11 +96,16 @@
     }
   }
 
+  .animate-title {
+    animation: oscillate 2s ease-in-out infinite, title 3s ease-out forwards;
+  }
+
   .animate-oscillate-1 {
     animation: oscillate 1s ease-in-out infinite;
   }
 
   .animate-oscillate-2 {
-    animation: oscillate 2s ease-in-out infinite;
+    animation: oscillate 2s ease-in-out infinite,
+      fade-in 3s ease-in-out forwards;
   }
 }
