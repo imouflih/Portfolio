@@ -34,12 +34,12 @@ export const Card: React.FC<PropsWithChildren> = ({
   return (
     <div
       onMouseMove={onMouseMove}
-      className="relative overflow-hidden duration-700 border rounded-xl hover:bg-zinc-400/10 group md:gap-8 hover:border-zinc-100/50 border-zinc-600 "
+      className="relative overflow-hidden duration-700 border rounded-xl group md:gap-8 hover:border-zinc-100/50 border-zinc-600 bg-gradient-to-tl from-slate-500 via-white/20 to-slate-500 dark:from-black/20 dark:via-zinc-600/20 dark:to-black-800/20"
     >
       <div className="pointer-events-none">
         <div className="absolute inset-0 z-0 transition duration-1000 [mask-image:linear-gradient(black,transparent)]" />
         <motion.div
-          className="absolute inset-0 z-10 transition duration-1000 opacity-100 bg-gradient-to-br via-zinc-100/10 group-hover:opacity-50 "
+          className="absolute inset-0 z-10 transition duration-1000 opacity-100 bg-gradient-to-br via-zinc-100/10"
           style={style}
         />
         <motion.div

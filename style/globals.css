@@ -108,4 +108,8 @@
     animation: oscillate 2s ease-in-out infinite,
       fade-in 3s ease-in-out forwards;
   }
+
+  .animate-cards {
+    animation: title 3s ease-out forwards;
+  }
 }

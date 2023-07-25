@@ -28,13 +28,14 @@ const socials = [
 
 export default function ContactPage() {
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden min-w-screen bg-gradient-to-tl from-slate-500 via-white/20 to-slate-500 dark:from-black dark:via-zinc-600/20 dark:to-black">
+      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-black/0 via-black/50 to-black/0 dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
       <ParticlesWrapper
-        className="absolute inset-0 min-h-screen -z-10 animate-fade-in"
+        className="absolute inset-0 min-h-screen -z-1"
         quantity={1000}
       />
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16 animate-cards">
           {socials.map((s) => (
             <Card key={null}>
               <Link
@@ -62,6 +63,7 @@ export default function ContactPage() {
           ))}
         </div>
       </div>
+      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-black/0 via-black/50 to-black/0 dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
     </div>
   );
 }
