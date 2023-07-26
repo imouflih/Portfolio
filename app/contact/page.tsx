@@ -34,8 +34,8 @@ export default function ContactPage() {
         className="absolute inset-0 min-h-screen -z-1"
         quantity={1000}
       />
-      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16 animate-cards">
+      <div className="container flex items-center justify-center min-h-screen px-4 mx-auto animate-fade-in w-[90%]">
+        <div className="grid w-full grid-cols-3 gap-8 mx-auto mt-32">
           {socials.map((s) => (
             <Card key={null}>
               <Link
