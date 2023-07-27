@@ -28,7 +28,7 @@ const socials = [
 
 export default function ContactPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden min-w-screen bg-gradient-to-tl from-slate-500 via-white/20 to-slate-500 dark:from-black dark:via-zinc-600/20 dark:to-black">
+    <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden min-w-screen bg-gradient-to-tl from-slate-300 via-slate-400/20 to-slate-300 dark:from-black dark:via-zinc-600/20 dark:to-black">
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-black/0 via-black/50 to-black/0 dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
       <ParticlesWrapper
         className="absolute inset-0 min-h-screen -z-1"
@@ -41,7 +41,7 @@ export default function ContactPage() {
               <Link
                 href={s.href}
                 target="_blank"
-                className="relative flex flex-col items-center gap-4 p-4 duration-700 group md:gap-8 md:py-24 lg:pb-48 md:p-16"
+                className="relative flex flex-col items-center gap-4 p-4 py-40 group"
               >
                 <span
                   className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
