@@ -78,19 +78,19 @@ const MyProjectsPage = async () => {
                 target="_blank"
                 className="relative flex flex-col gap-4 p-6 group"
               >
-                <div className="z-10 flex flex-col">
+                <div className="flex flex-col justify-start min-h-[220px]">
                   <span className="text-3xl font-bold text-zinc-800 group-hover:text-black dark:text-zinc-200 dark:group-hover:text-white font-display">
                     {project.title}
                   </span>
                   <span className="mt-4 text-base text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-800 dark:group-hover:text-zinc-200">
                     {project.desc}
                   </span>
-                  <div className="flex mt-4 space-x-3">
+                  <div className="grid grid-cols-5 mt-auto">
                     {project.technologies.map((tech, index) => {
                       return (
                         <div
                           dangerouslySetInnerHTML={{ __html: tech }}
-                          className="w-12 h-12 space-x-2 fill-current"
+                          className="w-12 h-12 mb-2 space-x-2 fill-current"
                           key={index + 1}
                         />
                       );
