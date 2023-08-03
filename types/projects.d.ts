@@ -5,4 +5,5 @@ type Project = {
   href: string;
   technologies: string[];
   priority: number;
+  type: string;
 };
