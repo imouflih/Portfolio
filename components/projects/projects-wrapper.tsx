@@ -22,7 +22,6 @@ export const ProjectsWrapper: ({ allProjects, type }: Props) => JSX.Element = ({
             <Card key={index + 1}>
               <Link
                 href={project.href}
-                target="_blank"
                 className="relative flex flex-col gap-4 p-6 group"
               >
                 <div className="flex flex-col justify-start min-h-[220px]">
@@ -50,7 +49,6 @@ export const ProjectsWrapper: ({ allProjects, type }: Props) => JSX.Element = ({
             <Card key={index + 1}>
               <Link
                 href={project.href}
-                target="_blank"
                 className="relative flex flex-col gap-4 p-6 group"
               >
                 <div className="flex flex-col justify-start min-h-[220px]">
