@@ -6,4 +6,6 @@ type Project = {
   technologies: string[];
   priority: number;
   type: string;
+  github: string;
+  link: string;
 };
