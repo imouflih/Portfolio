@@ -8,4 +8,5 @@ type Project = {
   type: string;
   github: string;
   link: string;
+  detailedDesc: string;
 };

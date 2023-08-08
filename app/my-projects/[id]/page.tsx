@@ -18,6 +18,14 @@ const SingleProjectPage: ({
         quantity={1000}
       />
       <ProjectHeader project={project} />
+      <div className="hidden w-screen h-px animate-glow animate-fade-in md:block bg-gradient-to-r from-black/0 via-black/50 to-black/0 dark:from-zinc-300/0 dark:via-zinc-300/50 dark:to-zinc-300/0" />
+      <div className="container relative py-10 mx-auto overflow-hidden isolate animate-fade-in">
+        <div className="flex flex-col items-center max-w-5xl px-6 mx-auto text-justify">
+          <p className="mt-6 text-lg leading-8 text-zinc-700 dark:text-zinc-200">
+            {project.detailedDesc}
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
